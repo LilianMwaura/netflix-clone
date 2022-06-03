@@ -1,0 +1,69 @@
+body{
+    background-color: #000000;
+    color: #ffffff;
+    font-family: 'Netflix Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: #757575;
+}
+
+a:hover{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.btn-danger{
+    background-color: #dd0000;
+    border-color: #dd0000;
+    color: #ffffff;
+    border-radius: 3px;
+}
+
+.btn-danger:hover{
+    background-color: #dd0000;
+    border-color: #dd0000;
+    color: #ffffff;
+    border-radius: 3px;
+}
+
+/*Landing Page*/
+.jumbotron {
+    color: rgb(199, 199, 199);
+    background-image: url('/static/images/netflix.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.landing-title{
+    font-size: 60px;
+    font-weight: bolder;
+}
+
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.hero-p{
+    font-size: 20px;
+    color: #fff;
+}
+
+.form-control{
+    padding: 0.5rem 1rem;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    border-radius: 0px;
+}
+
+.bg-danger{
+    background-color: #dd0000;
+    color: #ffffff;
+}
