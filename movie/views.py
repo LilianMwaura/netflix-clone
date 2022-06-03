@@ -1,5 +1,5 @@
-import requests
 import os
+import requests
 from django.shortcuts import render
 api_key=os.environ.get('API_KEY')
 
@@ -37,6 +37,15 @@ def trending(request):
         'data': data
     }
     return render(request, 'movie/trending.html', context)
+
+def view_movies(request):
+    data = requests.get(f"https://api.themoviedb.org/3/movie/297802?api_key={api_key}&language=en-US")
+    recommendations = requests.get(f"https://api.themoviedb.org/3/movie/297802/recommendations?api_key={api_key}&language=en-US")
+    return render(request, "movies.html", {
+        "data": data.json(),
+        "recommendations": recommendations.json(),
+        "type": "movie",
+    })
 
 # def movie(request, movie_id):
 #     url = f'https://api.themoviedb.org/3/movie/{movie_id}?api_key={api_key}'
